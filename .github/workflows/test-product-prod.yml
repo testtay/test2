@@ -1,0 +1,11 @@
+name: test-product
+on:
+  push:
+    branches:
+       - master
+jobs:
+  build:
+    steps:
+      - uses: ./dh-build
+        with:     
+          environment: prod
