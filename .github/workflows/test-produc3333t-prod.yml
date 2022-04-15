@@ -1,0 +1,11 @@
+name: test-produc3333t
+on:
+  push:
+    branches:
+       - master
+jobs:
+  build:
+    steps:
+      - uses: ./dh-build
+        with:     
+          environment: prod
